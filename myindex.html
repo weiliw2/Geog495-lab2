@@ -22,18 +22,33 @@
     </div>
 
     <!-- Page content -->
-    <div class="content">
-        This is abstract section.
-        <br>
-        <br>
-        Here is the course cover image in a scaled size:
-        <br>
-        <img src="img/coverpic.jpg" style="width: 60%; height: auto;">
-        <br>
-        <br>
-    </div>
+    <div class="row">
+        <div class="column">
+          <img src="img/coverpic.jpg" alt="Snow" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="img/coverpic2.jpg" alt="Forest" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="img/coverpic3.jpg" alt="Mountains" style="width:100%">
+        </div>
+      </div>
 
-
+    <div id="myDIV" class="header">
+        <h2>My To Do List</h2>
+        <input type="text" id="myInput" placeholder="Title...">
+        <span onclick="newElement()" class="addBtn">Add</span>
+      </div>
+      
+      <ul id="myUL">
+        <li>Hit the gym</li>
+        <li class="checked">Pay bills</li>
+        <li>GEOG 495 Assignment</li>
+        <li>Watching Movie</li>
+        <li>Listening Podcast</li>
+        <li>Organize Room</li>
+      </ul>
+      <script src="js/main.js"></script>
 </body>
 
 </html>
